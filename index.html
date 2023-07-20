@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PulsePro Fitness - Bootstrap Project</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+            <div class="container">
+                <h1 class="navbar-brand m-0 section-title">PulsePro Fitness</h1>
+                <button
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav
+                    class="navbar-collapse collapse justify-content-end"
+                    id="menu-nav">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a href="#sobre" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#aulas" class="nav-link">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Aulas
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#planos" class="nav-link">
+                                <i class="bi bi-cash-stack me-1"></i>
+                                Planos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#fale-conosco " class="nav-link">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div
+            data-bs-spy="scroll"
+            data-bs-target="cabecalho"
+            data-bs-smooth-scroll="true">
+            <section id="sobre">
+                <div
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    id="carousel">
+                    <div class="carousel-inner">
+                        <div
+                            class="carousel-item active"
+                            data-bs-interval="3000">
+                            <img src="images/slide1.jpg" alt="Slide 1" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/slide2.jpg" alt="Slide 2" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="images/slide3.jpg" alt="Slide 3" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button
+                            class="active"
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="0"></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="1"></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carousel"
+                            data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <img
+                                    src="images/gym-interior.jpg"
+                                    class="d-block w-100 rounded-4"
+                                    alt="Foto do espaço interno da academia" />
+                            </div>
+                            <div class="col-md-5 mt-3 mt-md-0">
+                                <h2 class="section-title">
+                                    Sobre
+                                    <span class="text-colored">a academia</span>
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni culpa nam
+                                    consectetur, asperiores laudantium veniam
+                                    error sunt nemo cum modi neque sed fugit.
+                                    Dolores maiores libero, reiciendis sit
+                                    pariatur nostrum!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Magni culpa nam
+                                    consectetur, asperiores laudantium veniam
+                                    error sunt nemo cum modi neque sed fugit.
+                                    Dolores maiores libero, reiciendis sit
+                                    pariatur nostrum!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="aulas" class="pt-5 pb-5">
+                <div class="container">
+                    <h2 class="section-title text-center mb-4">
+                        Conheça nossas <span class="text-colored">aulas</span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <img
+                                    src="images/spinning.jpg"
+                                    class="card-img-top"
+                                    alt="Spinning" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Spinning</h4>
+                                    <p class="card-text">
+                                        Pedale em uma bicicleta estacionária ao
+                                        ritmo de músicas motivadoras. É o
+                                        exercício ideal para melhorar a
+                                        resistência cardiovascular.
+                                    </p>
+                                    <a href="#" class="btn btn-secondary"
+                                        >Saiba mais</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <img
+                                    src="images/yoga.jpg"
+                                    class="card-img-top"
+                                    alt="Yoga" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Yoga</h4>
+                                    <p class="card-text">
+                                        Pratique posições físicas, exercícios de
+                                        respiração e relaxamento. Yoga reduz o
+                                        estresse e proporciona mais
+                                        flexibilidade.
+                                    </p>
+                                    <a href="#" class="btn btn-secondary"
+                                        >Saiba mais</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-3">
+                                <img
+                                    src="images/crossfit.jpg"
+                                    class="card-img-top"
+                                    alt="Crossfit" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Crossfit</h4>
+                                    <p class="card-text">
+                                        Treino funcional intensivo para
+                                        desenvolver força, resistência e
+                                        flexibilidade. Queime calorias e defina
+                                        seus músculos.
+                                    </p>
+                                    <a href="#" class="btn btn-secondary"
+                                        >Saiba mais</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="planos" class="p-5">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="section-title text-center mb-4">
+                            Sua evolução começa
+                            <span class="text-colored">aqui</span>
+                        </h1>
+                        <p class="text-center mb-4">
+                            Escolha o plano ideal para você.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted">Basic</h5>
+                                    <h1>R$99,90</h1>
+                                    <p class="lead">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Corrupti, laborum.
+                                    </p>
+                                    <ul>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-secondary"
+                                        >Adquira já</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted">
+                                        Standard
+                                    </h5>
+                                    <h1>R$119,90</h1>
+                                    <p class="lead">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Corrupti, laborum.
+                                    </p>
+                                    <ul>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-secondary"
+                                        >Adquira já</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted">
+                                        Professional
+                                    </h5>
+                                    <h1>R$149,90</h1>
+                                    <p class="lead">
+                                        Lorem ipsum dolor sit amet.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Corrupti, laborum.
+                                    </p>
+                                    <ul>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                        <li>Lorem</li>
+                                    </ul>
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-secondary"
+                                        >Adquira já</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="fale-conosco" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-4">
+                            Fale <span class="text-colored">conosco</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="nome"
+                                        class="form-label fw-bold text-colored"
+                                        >Seu nome</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        class="form-control"
+                                        required />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="email"
+                                        class="form-label fw-bold text-colored"
+                                        >Seu e-mail</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="form-control"
+                                        required />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="telefone"
+                                        class="form-label fw-bold text-colored"
+                                        >Seu telefone</label
+                                    >
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="mensagem"
+                                        class="form-label fw-bold text-colored"
+                                        >Sua mensagem</label
+                                    >
+                                    <textarea
+                                        class="form-control"
+                                        id="mensagem"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn fw-bold">
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i
+                                                class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-1 me-1">
+                                        <a href="#">
+                                            <i
+                                                class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i
+                                                class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua Teste Exemplo nº123, Bairro Bootstrap -
+                                    São Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

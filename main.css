@@ -1,0 +1,132 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand,
+.m-0,
+.section-title {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    background-color: #262e26;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #f2f5f1;
+    color: #262e26;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #f2f5f1;
+}
+
+.navbar-toggler {
+    background-color: #e0e9e9;
+}
+
+.section-title {
+    font-family: "Montserrat", sans-serif;
+}
+
+.carousel-inner {
+    height: 70vh;
+    object-fit: cover;
+}
+
+#sobre,
+#planos {
+    background-color: #f2f5f1;
+}
+
+#aulas .card-img-top {
+    height: 500px;
+    object-fit: cover;
+}
+
+.text-colored {
+    color: #83796d;
+}
+
+.btn,
+.btn-outline-secondary {
+    background-color: #83796d;
+    color: #e0e9e9;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #83796d;
+    color: #f2f5f1;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: #83796d;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+    .navbar-collapse ul {
+        margin-top: 1rem;
+    }
+
+    .carousel-item img {
+        height: 600px;
+    }
+
+    .carousel-inner {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse ul {
+        margin-top: 1rem;
+    }
+
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .carousel-inner {
+        height: 40vh;
+    }
+
+    body {
+        font-size: 0.7rem;
+    }
+
+    p {
+        font-size: 0.7 rem;
+    }
+
+    #sobre .col-md-7,
+    #sobre .col-md-5 {
+        padding-right: 32px !important;
+        padding-left: 32px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #aulas,
+    #planos,
+    #fale-conosco {
+        padding: 32px !important;
+    }
+
+    #planos .col-md-4 {
+        margin-bottom: 12px;
+    }
+}
